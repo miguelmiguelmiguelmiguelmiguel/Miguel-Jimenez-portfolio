@@ -1,0 +1,324 @@
+/* CUERPO */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #410000;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* ENLACES */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+
+    margin: 0 auto;
+}
+
+/* HERO */
+#hero {
+    position: relative;
+    background-image: url(imagenes/paisaje2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* TITULOS DE SECCIÓN */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* SECCIÓN SOBRE MÍ */
+#about{
+    margin: 0 15%;
+    line-height: 175%;
+}
+/* SECCIÓN HABILIDADES + PROYECTOS */
+#projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 80px 20px;
+}
+
+/* HABILIDADES */
+.skills-side {
+    flex: 1;
+    max-width: 250px;
+    background: rgba(31, 31, 31, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.skills-side h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1e90ff;
+}
+
+.skills-side ul {
+    list-style: none;
+}
+
+.skills-side li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    padding-left: 10px;
+    position: relative;
+}
+
+.skills-side li::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #1e90ff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* PROYECTOS */
+.projects-side {
+    flex: 4;
+}
+
+.projects-side h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* GRID DE PROYECTOS */
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(31,31,31,0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+/* JUEGOS */
+/* SECCIÓN DE JUEGOS */
+#mis-juegos {
+  text-align: center;
+  margin: 80px auto;
+  max-width: 1200px;
+}
+
+#mis-juegos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1e90ff;
+}
+
+/* GRID DE TARJETAS */
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* TARJETA DE JUEGO */
+.juego-card {
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.juego-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* IMAGEN DEL JUEGO */
+.juego-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover; /* Evita deformaciones */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO Y NOTA */
+.juego-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+}
+
+.juego-card p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+.nota {
+  display: inline-block;
+  font-weight: bold;
+  color: gold;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+/* BOTÓN VER MÁS*/
+button {
+    margin: 2%;
+    padding: 8px 16px;
+    background-color: #444;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #303030;
+}
+
+button:active {
+    background-color: #333;
+}
+/* CONTACTO */
+.card {
+    border: 1.5 solid black;
+    background-color: #c3c3c3d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    gap: 20px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+/* Contenedor base */
+.social{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.social img{
+    width: 100%;
+}
+.social:hover {
+    transform: scale(1.5);
+    border-radius: 15px;
+}
+/* colores */
+.github:hover{ background: linear-gradient(45deg, #333333, #6e5494, #000000); }
+.instagram:hover{ background: linear-gradient(45deg, #fa7e1e, #d62976, #962fbf); }
+.linkedin:hover{ background: linear-gradient(45deg, #0077B5, #00A0DC, #005983); }
+.mail:hover{ background: linear-gradient(45deg, #D44638, #EA4335, #FF6D00); }
+.tiktok:hover{ background: linear-gradient(45deg, #57f4ff, #EE1D52, #010101); }
+.twitter:hover{ background: linear-gradient(45deg, #1DA1F2, #0d95e8, #004570); }
+.youtube:hover{ background: linear-gradient(45deg, #FF0000, #CC0000, #990000); }
+
+
+
+/* Animación */
+@keyframes slide-in-top {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    #projects-section {
+        flex-direction: column;
+    }
+
+    .skills-side {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin-bottom: 30px;
+    }
+
+    .projects-side h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+    #hero p {
+        font-size: 1rem;
+    }
+    .projects-side h2 {
+        font-size: 1.5rem;
+    }
+    .skills-side li {
+        font-size: 0.9rem;
+    }
+}
