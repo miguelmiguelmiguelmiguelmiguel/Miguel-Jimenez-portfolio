@@ -13,7 +13,7 @@ function obtenerJuegosAleatorios(lista, cantidad) {
 
 async function cargarJuegos() {
   try {
-    const res = await fetch("videojuegos/juegos.json");
+    const res = await fetch("https://raw.githubusercontent.com/miguelmiguelmiguelmiguelmiguel/Mis-videojuegos/refs/heads/main/juegos.json");
     const misJuegos = await res.json();
     const seleccion = obtenerJuegosAleatorios(misJuegos, 3);
     contenedor.innerHTML = "";
