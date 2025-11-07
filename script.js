@@ -1,4 +1,4 @@
-const apiKey = "9b18c6889c334779804abb181c00e847";
+const apiKey = "5f293e60061a4ddda10338c50c1d61e6";
 const contenedor = document.getElementById("juegos");
 
 function obtenerJuegosAleatorios(lista, cantidad) {
