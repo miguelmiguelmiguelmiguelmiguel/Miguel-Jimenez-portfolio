@@ -3,10 +3,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #410000;
     color: #e0e0e0;
-    line-height: 1.6;
+    line-height: 1.8;
 }
-
-/* ENLACES */
+h1, h2, h3, h4{
+    text-align: center;
+}
 a {
     color: #1e90ff;
     text-decoration: none;
@@ -14,14 +15,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
 /* SECCIONES */
 section {
     padding: 60px 20px;
-
     margin: 0 auto;
 }
-
 /* HERO */
 #hero {
     position: relative;
@@ -34,7 +32,6 @@ section {
     text-align: center;
     color: #fff;
 }
-
 #hero::before {
     content: "";
     position: absolute;
@@ -44,12 +41,11 @@ section {
     background: rgba(0,0,0,0.5);
     z-index: 0;
 }
-
-.hero-content {
+.hero{
     position: relative;
     z-index: 1;
 }
-.hero-content img{
+.hero img{
     width: 25vw;
     display: flex;
 }
@@ -64,13 +60,8 @@ section {
     margin: 0 auto;
 }
 
-/* TITULOS DE SECCIÓN */
-h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-/* SECCIÓN SOBRE MÍ */
-#about{
+/* SOBRE MÍ */
+#miguel{
     margin: 0 15%;
     line-height: 175%;
 }
@@ -84,29 +75,25 @@ h2 {
 }
 
 /* HABILIDADES */
-.skills-side {
+#habilidades{
     flex: 1;
-    max-width: 250px;
+    width: 100;
     background: rgba(31, 31, 31, 0.9);
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    top: 50px;
     position: sticky;
-    top: 100px;
-    height: fit-content;
 }
-
-.skills-side h3 {
+#habilidades h3{
     font-size: 1.3rem;
     margin-bottom: 15px;
     color: #1e90ff;
 }
-
-.skills-side ul {
+#habilidades ul{
     list-style: none;
 }
-
-.skills-side li {
+#habilidades li{
     margin-bottom: 10px;
     font-size: 0.95rem;
     opacity: 0.9;
@@ -114,7 +101,7 @@ h2 {
     position: relative;
 }
 
-.skills-side li::before {
+#habilidades li::before {
     content: "";
     width: 5px;
     height: 5px;
@@ -137,7 +124,7 @@ h2 {
 }
 
 /* GRID DE PROYECTOS */
-#project-grid {
+#proyectos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -300,34 +287,18 @@ p{
 
 /* RESPONSIVE */
 @media (max-width: 800px) {
-    #projects-section {
+    #projects-section{
         flex-direction: column;
     }
 
-    .skills-side {
+    #habilidades{
         position: static;
-        width: 100%;
-        max-width: none;
-        margin-bottom: 30px;
     }
 
     .projects-side h2 {
         text-align: center;
     }
-
-    #hero h1 {
-        font-size: 2.2rem;
-    }
-    #hero p {
-        font-size: 1rem;
-    }
-    .projects-side h2 {
-        font-size: 1.5rem;
-    }
-    .skills-side li {
-        font-size: 0.9rem;
-    }
-    #project-grid{
+    #proyectos{
         display: grid;
         grid-template-columns: repeat(1 ,1fr);
         gap: 20px;
