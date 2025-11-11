@@ -147,6 +147,9 @@ h2 {
     box-shadow: 0 6px 15px rgba(0,0,0,0.4);
     transition: transform 0.3s;
 }
+.project-card img{
+    width: 100%;
+}
 
 .project-card:hover {
     transform: translateY(-5px);
@@ -247,6 +250,9 @@ h2 {
     gap: 20px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
 }
+p{
+    text-align: center;
+}
 
 /* Contenedor base */
 .social{
@@ -305,9 +311,7 @@ h2 {
     .projects-side h2 {
         text-align: center;
     }
-}
 
-@media (max-width: 500px) {
     #hero h1 {
         font-size: 2.2rem;
     }
@@ -319,5 +323,10 @@ h2 {
     }
     .skills-side li {
         font-size: 0.9rem;
+    }
+    #project-grid{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        gap: 20px;
     }
 }
