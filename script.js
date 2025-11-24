@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   //-------------BOTÓN VER MÁS
   const texto = document.getElementById("texto");
-  const boton = document.getElementById("vermas"); // solo existe en "sobre mi"
+  const boton = document.getElementById("vermas"); 
 
   if (boton) {
     boton.addEventListener("click", () => {
